@@ -1,0 +1,22 @@
+<div class="card wid">
+    <div class="card-body">
+        <div class="text-center mt-3 mb-5">
+            <h3>SUBSCRIPTION FORM</h3>
+            <p class="m-auto subs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda aperiam, nam quasi neque est, esse explicabo illum sint fuga in totam corrupti alias. Rerum.
+            </p>
+            <form action="" class="form-inline mb-5 mt-5" [formGroup]="form">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control shadow-effect" placeholder="Your Name"  formControlName="name">
+                </div>
+                <div class="alert alert-danger" *ngIf="fc['name'].touched && fc['name'].invalid">This field is Required</div>
+                <div class="form-group col-md-5">
+                    <input type="email" class="form-control shadow-effect" placeholder="Your email"  formControlName="email">
+                </div>
+                <div class="alert alert-danger" *ngIf="fc['email'].touched && fc['email'].invalid">This field is Required</div>
+                <div class="col-md-3">
+                    <button class="btn btn-block btn-info btn-sub" (click)="submit()" [disabled]="!form.valid">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

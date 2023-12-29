@@ -1,0 +1,11 @@
+header{
+    height:100px;
+    margin-top: 42px;
+}
+.site-logo{
+    padding:0px 10px;
+    border-radius: 20px;
+    background-color:#E5F5EA;
+    color: #026467;
+    font: 1.5em;
+}

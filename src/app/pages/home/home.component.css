@@ -1,0 +1,12 @@
+.featured-section{
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 130px;
+    background-color: #026467;
+}
+app-post-card{
+    cursor: pointer;
+}
+app-post-card:hover{
+    background-color: #000000;
+}
